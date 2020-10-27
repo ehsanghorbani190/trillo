@@ -12,10 +12,14 @@
 	border-bottom: 1px solid var(--color-grey-light-2);
 }
 .content {
+    display: flex;
 }
 .sidebar {
 	background-color: var(--color-grey-dark-1);
+
+    flex: 0 0 18%; //Defining width
 }
 .hotel-view {
-	background-color: #fff;
+    background-color: tomato;
+    flex: 1;//this el should grow as much as it can
 }
