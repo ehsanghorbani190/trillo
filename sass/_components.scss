@@ -341,7 +341,11 @@
 	box-shadow: var(--shadow-light);
 	padding: 3rem;
 	margin-bottom: 3.5rem;
+	position: relative;
+	overflow: hidden;
 	&__text {
+		position: relative;
+		z-index: 10;
 		margin-bottom: 2rem;
 	}
 	&__user {
@@ -371,5 +375,16 @@
 		color: var(--color-primary);
 		font-size: 2.2rem;
 		font-weight: 300;
+	}
+	&::before{
+		content:"\201C";
+		position: absolute;
+		top: -3.4rem;
+		left: -1rem;
+		line-height: 1;
+		font-size: 20rem;
+		color: var(--color-grey-light-2);
+		font-family: sans-serif;
+		z-index: 1;
 	}
 }
