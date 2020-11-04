@@ -23,6 +23,9 @@
 }
 .content {
 	display: flex;
+	@media only screen and (max-width:$bp-medium){
+		flex-direction: column; // Moving Sidebar to top to buy some space
+	}
 }
 .sidebar {
 	background-color: var(--color-grey-dark-1);
