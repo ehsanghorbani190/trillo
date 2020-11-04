@@ -3,8 +3,14 @@
 	margin: 8rem auto; //centering the container in body
 	background-color: #fff;
 	box-shadow: var(--shadow-dark);
-
 	min-height: 50rem;
+
+	@media only screen and (max-width:$bp-largest){
+		margin:0; //Make Site occupy all of viewport in smaller screens , remove gradient bg
+		max-width: 100%;
+		width: 100%;
+		
+	}
 }
 .header {
 	height: 7rem;
